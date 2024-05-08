@@ -1,18 +1,93 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Assignment 1</title>
+    <title>Assignment 2</title>
   </head>
   <body style="background-color: gainsboro">
-    <h1 style="font-size: 60px; font-family: verdana; background-color: #ff6347; color: white">
-      ASSIGNMENT DAY 1
-    </h1>
-    <p style="color: darkslategrey">
-      <strong>My <em>first</em> assignment.</strong>
-    </p>
-    <button><a href="https://playvalorant.com/en-gb/agents/">Link to Valorant Agents</a></button>
-    <hr />
-    <!--jett pict-->
-    <img src="jett.jpg" alt="jett" width="800" height="450" />
+    <!--table-->
+    <table width="100%">
+      <tr>
+        <td colspan="2" style="background-color: #ff6347">
+          <h1 style="font-size: 60px; font-family: verdana; color: white">ASSIGNMENT DAY 2</h1>
+          <!--jett pict-->
+          <img src="jett.jpg" alt="jett" width="400" height="225" />
+        </td>
+      </tr>
+      <tr valign="center">
+        <td style="background-color: #aaa; width: 50%; height: 200px; padding: 2%">
+          <button>
+            <a href="https://playvalorant.com/en-gb/agents/">Link to Valorant Agents</a></button
+          ><br /><br />
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/EiVF6QsAijo?si=gkDLsNEaxUQKi64G"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe
+          ><br /><br />
+          <audio controls autoplay>
+            <source src="valo.mp3" type="audio/mpeg" />
+          </audio>
+        </td>
+        <td style="background-color: #eee; width: 50%; height: 200px; padding-left: 2%">
+          <p>
+            <strong>Tell me about yourself!</strong>
+          </p>
+          <form>
+            <!--name-->
+            <label for="fname">First name:</label><br />
+            <input type="text" id="fname" name="fname" /><br />
+            <label for="lname">Last name:</label><br />
+            <input type="text" id="lname" name="lname" /><br />
+
+            <!--radio -->
+            <p>Choose your favorite agent:</p>
+            <input type="radio" id="html" name="main_weapon" value="HTML" />
+            <label for="html">Jett</label><br />
+            <input type="radio" id="css" name="main_weapon" value="CSS" />
+            <label for="css">Gekko</label><br />
+            <input type="radio" id="javascript" name="main_weapon" value="JavaScript" />
+            <label for="javascript">Sage</label>
+
+            <!--checkbox -->
+            <p>Choose your favorite weapons:</p>
+            <input type="checkbox" id="weapon1" name="weapon1" value="Ghost" />
+            <label for="weapon1"> Ghost</label><br />
+            <input type="checkbox" id="weapon2" name="weapon2" value="Spectre" />
+            <label for="weapon2"> Spectre</label><br />
+            <input type="checkbox" id="weapon3" name="weapon3" value="Vandal" />
+            <label for="weapon3"> Vandal</label><br />
+            <input type="checkbox" id="weapon4" name="weapon4" value="Phantom" />
+            <label for="weapon4"> Phantom</label><br />
+            <input type="checkbox" id="weapon5" name="weapon5" value="Odin" />
+            <label for="weapon5"> Odin</label><br />
+            <input type="checkbox" id="weapon6" name="weapon6" value="OP" />
+            <label for="weapon6"> OP</label><br />
+
+            <!--acc -->
+            <p>
+              <strong>Let's create your account!</strong>
+            </p>
+            <label for="email">Email:</label><br />
+            <input type="email" id="email" name="email" /><br />
+            <label for="username">Username:</label><br />
+            <input type="text" id="username" name="username" /><br />
+            <label for="pwd">Password:</label><br />
+            <input type="password" id="pwd" name="pwd" /><br /><br />
+            <!--submit -->
+            <input type="submit" value="Submit" />
+          </form>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="background-color: #ff6347; text-align: center">
+          Assignment HTML © 2024
+        </td>
+      </tr>
+    </table>
   </body>
 </html>
