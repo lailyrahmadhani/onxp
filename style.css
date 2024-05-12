@@ -1,0 +1,137 @@
+body {
+  background-color: gainsboro;
+}
+
+h1 {
+  text-align: center;
+  font-size: 60px;
+  font-family: verdana;
+  color: white;
+  background-color: #ff6347;
+  margin: 0;
+}
+
+.oswald {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+p,
+label,
+.footer {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+img {
+  width: 400px;
+  height: 225px;
+}
+
+.container-image {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px 0;
+}
+
+.button-24 {
+  background: #ff6347;
+  border: 1px solid #ff6347;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  margin-bottom: 20px;
+}
+
+.button-24:hover,
+.button-24:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #ff6347;
+}
+
+.button-24:active {
+  opacity: 0.5;
+}
+
+.footer {
+  background-color: #ff6347;
+  text-align: center;
+  color: white;
+  font-size: small;
+  font-style: italic;
+  padding: 10px;
+}
+
+.scroll-container {
+  overflow: hidden;
+}
+
+.scrolling-text {
+  text-align: right;
+
+  /* animation properties */
+  -moz-transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+
+  -moz-animation: my-animation 10s linear infinite;
+  -webkit-animation: my-animation 10s linear infinite;
+  animation: my-animation 10s linear infinite;
+}
+
+@-webkit-keyframes my-animation {
+  from {
+    -webkit-transform: translateX(-100%);
+  }
+  to {
+    -webkit-transform: translateX(100%);
+  }
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+  to {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+}
+
+.left-side {
+  background-color: #aaa;
+  width: 50%;
+  padding: 2%;
+}
+
+.right-side {
+  background-color: #eee;
+  width: 50%;
+  height: 200px;
+  padding-left: 2%;
+}
