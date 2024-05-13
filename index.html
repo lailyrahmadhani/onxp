@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/styles/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -10,23 +10,23 @@
     />
     <title>Assignment 3</title>
   </head>
-  <body>
+  <body class="default-bg">
     <!--table-->
     <table width="100%">
       <tr>
         <td colspan="2">
-          <h1 class="oswald">ASSIGNMENT DAY 3</h1>
+          <h1>ASSIGNMENT DAY 3</h1>
           <!--jett pict-->
           <div class="container-image">
-            <img src="jett.jpg" alt="jett" width="400;" height="225" ; />
-            <img src="trio.jpg" alt="trio" width="400;" height="225" ; />
-            <img src="deadlock.jpg" alt="deadlock" width="400;" height="225" ; />
+            <img src="assets/images/jett.jpg" alt="jett" width="400;" height="225" ; />
+            <img src="assets/images/trio.jpg" alt="trio" width="400;" height="225" ; />
+            <img src="assets/images/deadlock.jpg" alt="deadlock" width="400;" height="225" ; />
           </div>
         </td>
       </tr>
       <tr valign="center">
         <td class="left-side">
-          <button class="button-24">
+          <button class="button-primary">
             <a href="https://playvalorant.com/en-gb/agents/">Link to Valorant Agents</a></button
           ><br /><br />
           <iframe
@@ -41,17 +41,22 @@
           ></iframe
           ><br /><br />
           <audio controls>
-            <source src="valo.mp3" type="audio/mpeg" />
+            <source src="assets/audio/valo.mp3" type="audio/mpeg" />
           </audio>
         </td>
         <td class="right-side">
-          <h2 class="oswald">Tell me about yourself!</h2>
+          <h2>Tell me about yourself!</h2>
           <form>
             <!--name-->
-            <label for="fname">First name:</label><br />
-            <input type="text" id="fname" name="fname" /><br />
-            <label for="lname">Last name:</label><br />
-            <input type="text" id="lname" name="lname" /><br />
+            <div class="form-group">
+              <label for="fname">First name:</label>
+              <input type="text" id="fname" name="fname" />
+            </div>
+
+            <div class="form-group">
+              <label for="lname">Last name:</label>
+              <input type="text" id="lname" name="lname" />
+            </div>
 
             <!--radio -->
             <p>Choose your favorite agent:</p>
@@ -78,7 +83,7 @@
             <label for="weapon6"> OP</label><br />
 
             <!--acc -->
-            <h2 class="oswald">Let's create your account!</h2>
+            <h2>Let's create your account!</h2>
             <label for="email">Email:</label><br />
             <input type="email" id="email" name="email" /><br />
             <label for="username">Username:</label><br />
@@ -86,7 +91,7 @@
             <label for="pwd">Password:</label><br />
             <input type="password" id="pwd" name="pwd" /><br /><br />
             <!--submit -->
-            <input class="button-24" type="submit" value="SUBMIT" />
+            <input class="button-primary" type="submit" value="SUBMIT" />
           </form>
         </td>
       </tr>

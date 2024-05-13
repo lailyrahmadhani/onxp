@@ -1,4 +1,4 @@
-body {
+.default-bg {
   background-color: gainsboro;
 }
 
@@ -11,7 +11,8 @@ h1 {
   margin: 0;
 }
 
-.oswald {
+h1,
+h2 {
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
@@ -38,7 +39,7 @@ img {
   margin: 20px 0;
 }
 
-.button-24 {
+.button-primary {
   background: #ff6347;
   border: 1px solid #ff6347;
   border-radius: 6px;
@@ -134,4 +135,8 @@ img {
   width: 50%;
   height: 200px;
   padding-left: 2%;
+}
+
+.form-group {
+  margin: 8px;
 }
