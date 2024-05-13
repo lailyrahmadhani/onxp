@@ -1,21 +1,32 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Assignment 2</title>
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Assignment 3</title>
   </head>
-  <body style="background-color: gainsboro">
+  <body class="default-bg">
     <!--table-->
     <table width="100%">
       <tr>
-        <td colspan="2" style="background-color: #ff6347">
-          <h1 style="font-size: 60px; font-family: verdana; color: white">ASSIGNMENT DAY 2</h1>
+        <td colspan="2">
+          <h1>ASSIGNMENT DAY 3</h1>
           <!--jett pict-->
-          <img src="jett.jpg" alt="jett" width="400" height="225" />
+          <div class="container-image">
+            <img src="assets/images/jett.jpg" alt="jett" width="400;" height="225" ; />
+            <img src="assets/images/trio.jpg" alt="trio" width="400;" height="225" ; />
+            <img src="assets/images/deadlock.jpg" alt="deadlock" width="400;" height="225" ; />
+          </div>
         </td>
       </tr>
       <tr valign="center">
-        <td style="background-color: #aaa; width: 50%; height: 200px; padding: 2%">
-          <button>
+        <td class="left-side">
+          <button class="button-primary">
             <a href="https://playvalorant.com/en-gb/agents/">Link to Valorant Agents</a></button
           ><br /><br />
           <iframe
@@ -29,20 +40,23 @@
             allowfullscreen
           ></iframe
           ><br /><br />
-          <audio controls autoplay>
-            <source src="valo.mp3" type="audio/mpeg" />
+          <audio controls>
+            <source src="assets/audio/valo.mp3" type="audio/mpeg" />
           </audio>
         </td>
-        <td style="background-color: #eee; width: 50%; height: 200px; padding-left: 2%">
-          <p>
-            <strong>Tell me about yourself!</strong>
-          </p>
+        <td class="right-side">
+          <h2>Tell me about yourself!</h2>
           <form>
             <!--name-->
-            <label for="fname">First name:</label><br />
-            <input type="text" id="fname" name="fname" /><br />
-            <label for="lname">Last name:</label><br />
-            <input type="text" id="lname" name="lname" /><br />
+            <div class="form-group">
+              <label for="fname">First name:</label>
+              <input type="text" id="fname" name="fname" />
+            </div>
+
+            <div class="form-group">
+              <label for="lname">Last name:</label>
+              <input type="text" id="lname" name="lname" />
+            </div>
 
             <!--radio -->
             <p>Choose your favorite agent:</p>
@@ -69,9 +83,7 @@
             <label for="weapon6"> OP</label><br />
 
             <!--acc -->
-            <p>
-              <strong>Let's create your account!</strong>
-            </p>
+            <h2>Let's create your account!</h2>
             <label for="email">Email:</label><br />
             <input type="email" id="email" name="email" /><br />
             <label for="username">Username:</label><br />
@@ -79,13 +91,13 @@
             <label for="pwd">Password:</label><br />
             <input type="password" id="pwd" name="pwd" /><br /><br />
             <!--submit -->
-            <input type="submit" value="Submit" />
+            <input class="button-primary" type="submit" value="SUBMIT" />
           </form>
         </td>
       </tr>
       <tr>
-        <td colspan="2" style="background-color: #ff6347; text-align: center">
-          Assignment HTML © 2024
+        <td colspan="2" class="footer scroll-container">
+          <div class="label scrolling-text">Assignment HTML © 2024</div>
         </td>
       </tr>
     </table>
